@@ -9,15 +9,15 @@ int check_cycle(listint_t *list)
 {
 	listint_t *aux, *tmp;
 
-	if(!head || !head->next)
+	if (!head || !head->next)
 		return (0);
 
 	aux = head->next;
 	tmp = head->next->next;
 
-	while(aux && tmp && tmp->next)
+	while (aux && tmp && tmp->next)
 	{
-		if(aux == tmp)
+		if (aux == tmp)
 			return (1);
 		aux = aux->next;
 		tmp = tmp->next->next;
