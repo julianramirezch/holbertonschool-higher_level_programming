@@ -7,13 +7,14 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *aux, *tmp;
+	listint_t *aux = list;
+	listint_t *tmp = list;
 
-	if (!head || !head->next)
+	if (!list || !list->next)
 		return (0);
 
-	aux = head->next;
-	tmp = head->next->next;
+	aux = aux->next;
+	tmp = tmp->next->next;
 
 	while (aux && tmp && tmp->next)
 	{
