@@ -10,9 +10,9 @@ if __name__ == "__main__":
         print('{} arguments.'.format(cont))
     elif cont == 1:
         print('{} argument:'.format(cont))
-        print('{}: {}'.format(cont, sys.argv[cont]))
+        print('{}: {}'.format(cont, argv[cont]))
     else:
         print('{} arguments:'.format(cont))
         for j in range(cont):
             if j != 0:
-                print('{}: {}'.format(j, sys.argv[j]))
+                print('{}: {}'.format(j, argv[j]))
