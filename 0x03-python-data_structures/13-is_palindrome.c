@@ -10,8 +10,7 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *aux, *tmp;
 	int cont = 0, cont2 = 0, cont3 = 0;
-	int *pal;
-
+	int *pal, size = 0;
 	if (!head)
 		return (0);
 	aux = *head;
@@ -23,7 +22,8 @@ int is_palindrome(listint_t **head)
 		cont++;
 		tmp = tmp->next;
 	}
-	pal = malloc(sizeof(int) * (cont + 1));
+	size = (sizeof(int) * (cont + 1));
+	pal = malloc(size);
 	pal[cont] = '\0';
 
 	for (cont2 = 0; cont2 < cont; cont2++)
