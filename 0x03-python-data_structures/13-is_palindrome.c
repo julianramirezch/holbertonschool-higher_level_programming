@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 	listint_t *aux, *tmp;
 	int cont = 0, cont2 = 0, cont3 = 0;
 	int *pal, size = 0;
+
 	if (!head)
 		return (0);
 	aux = *head;
@@ -35,7 +36,7 @@ int is_palindrome(listint_t **head)
 	while (cont > cont3)
 	{
 		if (pal[cont3] != pal[cont])
-		{	
+		{
 			free(pal);
 			return (0);
 		}
