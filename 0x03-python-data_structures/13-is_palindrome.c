@@ -12,9 +12,10 @@ int is_palindrome(listint_t **head)
 	int cont = 0, cont2 = 0, cont3 = 0;
 	int *pal;
 
-	if (!head || *head == NULL)
+	if (!head)
+		return (0);
+	if (*head == NULL)
 		return (1);
-
 	tmp = *head;
 	while (tmp)
 	{
