@@ -32,18 +32,16 @@ int is_palindrome(listint_t **head)
 		aux = aux->next;
 	}
 	cont--;
-	while (cont > cont3)
+	while (cont != cont3)
 	{
 		if (pal[cont3] != pal[cont])
-			continue;
+			break;
 		else
-		{	free(pal);
-			return (0);
-		}
+			return (free(pal), 1);
 		cont3++;
 		cont--;
 	}
 
 	free(pal);
-	return (1);
+	return (0);
 }
