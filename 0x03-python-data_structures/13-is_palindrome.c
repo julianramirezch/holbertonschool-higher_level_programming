@@ -34,14 +34,14 @@ int is_palindrome(listint_t **head)
 	cont--;
 	while (cont != cont3)
 	{
-		if (pal[cont3] != pal[cont])
-			break;
+		if (pal[cont3] == pal[cont])
+			continue;
 		else
-			return (free(pal), 1);
+			return (free(pal), 0);
 		cont3++;
 		cont--;
 	}
 
 	free(pal);
-	return (0);
+	return (1);
 }
