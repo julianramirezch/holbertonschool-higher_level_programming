@@ -10,12 +10,12 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *aux, *tmp;
 	int cont = 0, cont2 = 0, cont3 = 0;
-	int *pal, size = 0;
+	int pal[1024];
 
 	if (!head)
 		return (0);
 	aux = *head;
-	if (!*head || aux->next == NULL)
+	if (!aux || aux->next == NULL)
 		return (1);
 	tmp = *head;
 	while (tmp)
@@ -23,9 +23,6 @@ int is_palindrome(listint_t **head)
 		cont++;
 		tmp = tmp->next;
 	}
-	size = (sizeof(int) * (cont + 1));
-	pal = malloc(size);
-	pal[cont] = '\0';
 
 	for (cont2 = 0; cont2 < cont; cont2++)
 	{
@@ -36,14 +33,10 @@ int is_palindrome(listint_t **head)
 	while (cont > cont3)
 	{
 		if (pal[cont3] != pal[cont])
-		{
-			free(pal);
 			return (0);
-		}
 		cont3++;
 		cont--;
 	}
 
-	free(pal);
 	return (1);
 }
