@@ -14,9 +14,9 @@ def roman_to_int(roman_string):
         for j in range(index):
             if j == index - 1:
                 num += values[j]
-            elif values[j] >= values[j + 1]:
-                num += values[j]
-            else:
+            elif values[j] < values[j + 1]:
                 num -= values[j]
+            else:
+                num += values[j]
 
     return num
