@@ -6,19 +6,17 @@ def roman_to_int(roman_string):
     values = []
     num = 0
 
-    if type(roman_string) is not str:
-        return num
+    if type(roman_string) is str:
+        for i in roman_string:
+            values.append(r_num.get(i))
 
-    for i in roman_string:
-        values.append(r_num.get(i))
-
-    index = len(values)
-    for j in range(index):
-        if j == index - 1:
-            num += values[j]
-        elif values[j] >= values[j + 1]:
-            num += values[j]
-        else:
-            num -= values[j]
+        index = len(values)
+        for j in range(index):
+            if j == index - 1:
+                num += values[j]
+            elif values[j] >= values[j + 1]:
+                num += values[j]
+            else:
+                num -= values[j]
 
     return num
