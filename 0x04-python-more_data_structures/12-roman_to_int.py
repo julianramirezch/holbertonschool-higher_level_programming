@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     values = []
     num = 0
 
-    if type(roman_string) is not str or roman_string is None:
+    if type(roman_string) is not str:
         return num
 
     for i in roman_string:
