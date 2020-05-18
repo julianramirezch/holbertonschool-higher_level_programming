@@ -1,10 +1,10 @@
 <H1 align="center"> 0x05. Python - Exceptions </H1>
 
 <p align="center">
-   <a href="https://www.holbertonschool.com/co"><img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/79001/368330_619080.png"/></a>
+   <a href="https://www.holbertonschool.com/co"><img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/79001/368330_619080.png" width="100" height="100"/></a>
 
 <p align="center"> 
-   <b>Holberton School</b>
+   <b>Holberton School Bogotá D.C</b>
                 
 ----
 <H3> General </H3>
