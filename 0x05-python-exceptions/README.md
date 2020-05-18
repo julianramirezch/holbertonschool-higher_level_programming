@@ -38,6 +38,5 @@
 ### Julian Ramirez <julianramirezch1@gmail.com>
 ----
 [![Twitter Follow](https://img.shields.io/twitter/follow/JulianR_30.svg?style=social&label=Follow)](https://twitter.com/JulianR_30)
-<a href="https://co.linkedin.com/in/ing-julian-ramirez-chacon?trk=profile-badge"> <H4> Linkedin </H4>
-
+<a href="https://co.linkedin.com/in/ing-julian-ramirez-chacon?trk=profile-badge"> <H4> Linkedin </H4></a>
 2020
