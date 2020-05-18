@@ -1,7 +1,8 @@
 <H1 align="center"> 0x05. Python - Exceptions </H1>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 <p align="center">
-   <a href="https://www.holbertonschool.com/co"><img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/79001/368330_619080.png" width="200" height="200"/></a>
+   <a href="https://www.holbertonschool.com/co"><img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/79001/368330_619080.png" width="170" height="170"/></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
@@ -40,3 +41,4 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/JulianR_30.svg?style=social&label=Follow)](https://twitter.com/JulianR_30)
 
 2020
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="horizontal" data-theme="dark" data-vanity="ing-julian-ramirez-chacon"><a class="LI-simple-link" href='https://co.linkedin.com/in/ing-julian-ramirez-chacon?trk=profile-badge'>Julian Jose Ramirez Chacon</a></div>
