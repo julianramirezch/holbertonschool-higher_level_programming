@@ -41,4 +41,4 @@
 
 2020
 
-<img src="https://camo.githubusercontent.com/ff17382c89aec1dc4fd75a90c2326809749367d3/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6461766964676f6e7a616c657a66783f636f6c6f723d626c7565266c6162656c3d2534306461766964676f6e7a616c657a6678" alt="Twitter Follow" data-canonical-src="https://img.shields.io/twitter/follow/JulianR_30?color=blue&amp;label=%40JulianR_30" style="max-width:100%;">
+<img src="https://camo.githubusercontent.com/ff17382c89aec1dc4fd75a90c2326809749367d3/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6461766964676f6e7a616c657a66783f636f6c6f723d626c7565266c6162656c3d2534306461766964676f6e7a616c657a6678" alt="Twitter Follow" data-canonical-src="https://img.shields.io/twitter/follow/JulianR_30.svg?style=social&label=Follow" style="max-width:100%;">
