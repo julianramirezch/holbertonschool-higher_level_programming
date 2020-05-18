@@ -35,6 +35,10 @@ Python interpreters are available for many operating systems. A global community
                                                                 
                                                                 Tim Peters
 
+### Resources:
+
+https://www.python.org/
+https://en.wikipedia.org/wiki/Python_(programming_language)
 
 
 ## Author: 
