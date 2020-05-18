@@ -1,6 +1,13 @@
-0x00. Python - Hello, World
+<H1 align="center"> 0x00. Python - Hello, World </H1>
 
-General
+<p align="center">
+   <a href="https://www.holbertonschool.com/co"><img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/79001/368330_619080.png" width="170" height="170"/></a>
+
+<p align="center"> 
+   <b>Holberton School Bogotá D.C</b>
+                
+----
+<H3> General </H3>
 
     Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
     Who created Python
@@ -13,29 +20,25 @@ General
     What are indexing and slicing in Python
     What is the official Holberton Python coding style and how to check your code with PEP 8
 
-Tasks
 
-0. Run Python file - Write a Shell script that runs a Python script. The Python file name will be saved in the environment variable $PYFILE
+### Tasks:
 
-1. Run inline - Write a Shell script that runs Python code. The Python code will be saved in the environment variable $PYCODE
+| Name | Description                    |
+| ------------- | ------------------------------ |
+| `0. Run Python file  `      | Shell script that runs a Python script. The Python file name will be saved in the environment variable $PYFILE       |
+| `1. Run inline `   | Shell script that runs Python code. The Python code will be saved in the environment variable $PYCODE     |
+| `2. Hello, print `      | Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.       |
+| `3. Print integer `      | Print the integer stored in the variable number, followed by Battery street, followed by a new line.       |
+| `4. Print float `      | Print the float stored in the variable number with a precision of 2 digits.       |
+| `5. Print string `      | Print 3 times a string stored in the variable str, followed by its first 9 characters.       |
+| `6. Play with strings`      | Print Welcome to Holberton School!       |
+| `7. Copy - Cut - Paste`      |  Your program should be exactly 8 lines long       |
+| `8. Create a new sentence`      |  Print object-oriented programming with Python, followed by a new line.        |
+| `9. Easter Egg `      |  Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.       |
+| `10. Linked list cycle `      |  function in C that checks if a singly linked list has a cycle in it.|
 
-2. Hello, print - Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-
-3. Print integer - Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
-
-4. Print float - Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
-
-5. Print string - Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
-
-6. Play with strings - Complete this source code to print Welcome to Holberton School!
-
-7. Copy - Cut - Paste - Your program should be exactly 8 lines long
-word_first_3 should contain the first 3 letters of the variable word
-word_last_2 should contain the last 2 letters of the variable word
-middle_word should contain the value of the variable word without the first and last letters
-
-8. Create a new sentence - Complete this source code to print object-oriented programming with Python, followed by a new line.
-
-9. Easter Egg - Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
-
-10. Linked list cycle - Write a function in C that checks if a singly linked list has a cycle in it.
+## Author: 
+### Julian Ramirez <julianramirezch1@gmail.com>
+----
+[![Twitter Follow](https://img.shields.io/twitter/follow/JulianR_30.svg?style=social&label=Follow)](https://twitter.com/JulianR_30)
+2020
