@@ -46,6 +46,17 @@ class Square:
         """
         return self.__size
 
+    @property
+    def position(self):
+        """
+            Args:
+                self : Square.
+
+            Return:
+                self.__size
+        """
+        return self.__position
+
     @size.setter
     def size(self, value):
         """ Set value of size
@@ -68,20 +79,10 @@ class Square:
         else:
             self.__size = value
 
-    @property
-    def position(self):
-        """
-            Args:
-                self : Square.
-
-            Return:
-                self.__size
-        """
-        return self.__position
 
     @position.setter
     def position(self, value):
-        """ Set value of postion
+        """ Set value of position
 
             Args:
                 self : Square.
