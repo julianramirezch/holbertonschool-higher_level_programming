@@ -53,7 +53,7 @@ class Square:
                 self : Square.
 
             Return:
-                self.__size
+                self.__position
         """
         return self.__position
 
@@ -78,7 +78,6 @@ class Square:
             raise ValueError('size must be >= 0')
         else:
             self.__size = value
-
 
     @position.setter
     def position(self, value):
