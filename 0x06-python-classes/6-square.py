@@ -85,11 +85,15 @@ class Square:
                 TypeError: If `value` is not a tuple
                 ValueError: If `value` is minor to 0.
         """
+        x, y = value
         if type(value) is not tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
         elif len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
-        self.__position = value
+        elif (x, y) is not int:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        else:
+            self.__position = value
 
     def area(self):
         """ Returns current square area
