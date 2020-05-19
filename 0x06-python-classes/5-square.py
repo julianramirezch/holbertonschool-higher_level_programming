@@ -75,11 +75,11 @@ class Square:
             Return:
                 None
         """
-        num = self.__size
-        if num == 0:
+        size = self.__size
+        if size == 0:
             print('')
         else:
-            for i in range(num):
-                for j in range(num):
+            for i in range(size):
+                for j in range(size):
                     print('#', end='')
                 print('')
