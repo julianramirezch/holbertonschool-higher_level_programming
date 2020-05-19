@@ -116,7 +116,8 @@ class Square:
             print('')
         else:
             for i in range(size):
-                print(' ' * x, end='')
+                if y == 0:
+                    print(' ' * x, end='')
                 for j in range(size):
                     print('#', end='')
                 print('')
