@@ -117,12 +117,12 @@ class Square:
         size = self.__size
         x, y = self.__position
 
-        if size == 0:
-            print('')
-        else:
+        if size > 0:
             for i in range(size):
                 if y == 0:
                     print(' ' * x, end='')
                 for j in range(size):
                     print('#', end='')
                 print('')
+        else:
+            print('')
