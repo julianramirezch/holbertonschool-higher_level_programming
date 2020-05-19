@@ -58,7 +58,7 @@ class Square:
             raise ValueError('size must be >= 0')
 
     def area(self):
-        """
+        """ Returns current square area
             Args:
                 self : Square.
 
@@ -68,7 +68,7 @@ class Square:
         return (self.__size ** 2)
 
     def my_print(self):
-        """
+        """ Prints in stdout the square with the character #
             Args:
                 self : Square.
 
