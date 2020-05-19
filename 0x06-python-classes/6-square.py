@@ -18,14 +18,21 @@ class Square:
                 ValueError: If `size` is minor to 0.
     """
 
-    def __init__(self, size=0, position=(0, 0), area=0):
-        self.__size = size
-        self.__position = position
-        self.__area = area
+    def __init__(self, size=0, position=(0, 0)):
+
         if type(size) is not int:
             raise TypeError('size must be an integer')
         if size < 0:
             raise ValueError('size must be >= 0')
+        else:
+            self.__size = size
+
+        if type(position) is not tuple:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        elif len(position) != 2:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        else:
+            self.__position = position
 
     @property
     def size(self):
@@ -55,9 +62,10 @@ class Square:
         """
         if type(value) is not int:
             raise TypeError('size must be an integer')
-        if value < 0:
+        elif value < 0:
             raise ValueError('size must be >= 0')
-        self.__size = value
+        else:
+            self.__size = value
 
     @property
     def position(self):
@@ -85,13 +93,9 @@ class Square:
                 TypeError: If `value` is not a tuple
                 ValueError: If `value` is minor to 0.
         """
-        if type(value) is not tuple:
+        if type(value[0]) is not int or type(value[1]) is not int:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif len(value) != 2:
-            raise TypeError('position must be a tuple of 2 positive integers')
-        elif type(value[0]) is not int and type(value[1]) is not int:
-            raise TypeError('position must be a tuple of 2 positive integers')
-        elif value[0] < 0 and value[1] < 0:
+        elif value[0] < 0 or value[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
         else:
             self.__position = value
@@ -117,12 +121,12 @@ class Square:
         size = self.__size
         x, y = self.__position
 
-        if size > 0:
+        if size == 0:
+            print('')
+        else:
             for i in range(size):
                 if y == 0:
                     print(' ' * x, end='')
                 for j in range(size):
                     print('#', end='')
                 print('')
-        else:
-            print('')
