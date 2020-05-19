@@ -4,15 +4,12 @@
 
 class Square:
     """ Class define a Square
-
                 Args:
                 size (int): Size of Square.
                 area (int): Area of Square
                 position (int): Position of square
-
             Returns:
                 None.
-
             Raises:
                 TypeError: If size is not an integer
                         If position is not a tuple
@@ -40,7 +37,6 @@ class Square:
         """
             Args:
                 self : Square.
-
             Return:
                 self.__size
         """
@@ -51,7 +47,6 @@ class Square:
         """
             Args:
                 self : Square.
-
             Return:
                 self.__position
         """
@@ -60,14 +55,11 @@ class Square:
     @size.setter
     def size(self, value):
         """ Set value of size
-
             Args:
                 self : Square.
                 value (int): Value of size
-
             Returns:
                 None.
-
             Raises:
                 TypeError: If `value` is not an integer
                 ValueError: If `value` is minor to 0.
@@ -82,14 +74,11 @@ class Square:
     @position.setter
     def position(self, value):
         """ Set value of position
-
             Args:
                 self : Square.
                 value (tuple): Value of position
-
             Returns:
                 None.
-
             Raises:
                 TypeError: If `value` is not int or > 0
         """
@@ -104,7 +93,6 @@ class Square:
         """ Returns current square area
             Args:
                 self : Square.
-
             Return:
                 Current square area.
         """
@@ -114,17 +102,15 @@ class Square:
         """ Prints in stdout the square with the character #
             Args:
                 self : Square.
-
             Return:
                 None
         """
         size = self.__size
-        x, y = self.__position
 
         if size == 0:
             print('')
         else:
-            for i in range(y):
+            for i in range(self.__position[1]):
                 print('')
             for j in range(size):
-                print(' ' * x + '#' * size)
+                print(' ' * self.__position[0] + '#' * size)
