@@ -38,7 +38,8 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """
+        """ Set value of size
+
             Args:
                 self : Square.
                 value (int): Value of size
@@ -47,8 +48,8 @@ class Square:
                 None.
 
             Raises:
-                TypeError: If size is not an integer
-                ValueError: If `size` is minor to 0.
+                TypeError: If `value` is not an integer
+                ValueError: If `value` is minor to 0.
         """
         self.__size = value
         if type(value) is not int:
