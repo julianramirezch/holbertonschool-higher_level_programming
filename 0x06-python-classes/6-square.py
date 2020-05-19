@@ -15,6 +15,7 @@ class Square:
 
             Raises:
                 TypeError: If size is not an integer
+                        If position is not a tuple
                 ValueError: If `size` is minor to 0.
     """
 
@@ -90,8 +91,7 @@ class Square:
                 None.
 
             Raises:
-                TypeError: If `value` is not a tuple
-                ValueError: If `value` is minor to 0.
+                TypeError: If `value` is not int or > 0
         """
         if type(value[0]) is not int or type(value[1]) is not int:
             raise TypeError('position must be a tuple of 2 positive integers')
@@ -124,9 +124,7 @@ class Square:
         if size == 0:
             print('')
         else:
-            for i in range(size):
-                if y == 0:
-                    print(' ' * x, end='')
-                for j in range(size):
-                    print('#', end='')
+            for i in range(y):
                 print('')
+            for j in range(size):
+                print(' ' * x + '#' * size)
