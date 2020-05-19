@@ -4,7 +4,7 @@
 
 class Square:
     """ Class define a Square
-    
+
                 Args:
                 size (int): Size of Square.
                 area (int): Area of Square
