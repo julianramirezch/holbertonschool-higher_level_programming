@@ -3,10 +3,7 @@
 
 
 class Square:
-    """ Class define a Square"""
-
-    def __init__(self, size=0):
-        """
+    """ Class define a Square
             Args:
                 size (int): Size of Square.
 
@@ -17,6 +14,8 @@ class Square:
                 TypeError: If size is not an integer
                 ValueError: If `size` is minor to 0.
         """
+
+    def __init__(self, size=0):
         self.__size = size
         if type(size) is not int:
             raise TypeError('size must be an integer')
