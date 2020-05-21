@@ -3,13 +3,9 @@
 
 
 class Square:
-    """ Class define a Square"""
-
-    def __init__(self, size=0, area=0):
-        """
+    """ Class define a Square
             Args:
                 size (int): Size of Square.
-                area (int): Area of Square
 
             Returns:
                 None.
@@ -18,6 +14,7 @@ class Square:
                 TypeError: If size is not an integer
                 ValueError: If `size` is minor to 0.
         """
+    def __init__(self, size=0, area=0):
         self.__size = size
         self.__area = area
         if type(size) is not int:
@@ -26,11 +23,5 @@ class Square:
             raise ValueError('size must be >= 0')
 
     def area(self):
-        """
-            Args:
-                self : Square.
-
-            Return:
-                Current square area.
-        """
+        """ Return current square area """
         return (self.__size ** 2)
