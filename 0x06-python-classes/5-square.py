@@ -4,10 +4,8 @@
 
 class Square:
     """ Class define a Square
-
-                Args:
+            Args:
                 size (int): Size of Square.
-                area (int): Area of Square
 
             Returns:
                 None.
@@ -15,43 +13,19 @@ class Square:
             Raises:
                 TypeError: If size is not an integer
                 ValueError: If `size` is minor to 0.
-    """
-
+        """
     def __init__(self, size=0, area=0):
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.size = size
-        self.area = area
+        self.size = size
+        self.__area = area
 
     @property
     def size(self):
-        """
-            Args:
-                self : Square.
-
-            Return:
-                self.__size
-        """
+        """ Getter of size"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ Set value of size
-
-            Args:
-                self : Square.
-                value (int): Value of size
-
-            Returns:
-                None.
-
-            Raises:
-                TypeError: If `value` is not an integer
-                ValueError: If `value` is minor to 0.
-        """
+        """ Set value of size """
         self.__size = value
         if type(value) is not int:
             raise TypeError('size must be an integer')
@@ -59,23 +33,11 @@ class Square:
             raise ValueError('size must be >= 0')
 
     def area(self):
-        """ Returns current square area
-            Args:
-                self : Square.
-
-            Return:
-                Current square area.
-        """
+        """ Return current square area """
         return (self.__size ** 2)
 
     def my_print(self):
-        """ Prints in stdout the square with the character #
-            Args:
-                self : Square.
-
-            Return:
-                None
-        """
+        """ Prints in stdout the square with the character # """
         size = self.__size
         if size == 0:
             print('')
