@@ -40,6 +40,14 @@
     <BLANKLINE>
     ia
 
+    >>> text_indentation("Holberton .:?")
+    Holberton .
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+
 # check for TypeError
 =========================================================
     >>> text_indentation(123456789.)
