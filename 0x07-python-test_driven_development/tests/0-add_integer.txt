@@ -1,0 +1,101 @@
+# importing module: add_integer
+=========================================================
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+# check correct outputs
+=========================================================
+    >>> add_integer(0, 0)
+    0
+    >>> add_integer(1, 7)
+    8
+    >>> add_integer(-1, -7)
+    -8
+    >>> add_integer(7)
+    105
+    >>> add_integer(7.57, -17)
+    -10
+    >>> add_integer(7.57, -7.57)
+    0
+    >>> add_integer(-0.1234567, 1.234567)
+    1
+
+# check for TypeError
+=========================================================
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer('str')
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer('str', 'Holberton')
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer([1, 2, 3])
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer([1, 2, 3], [1, 2, 3])
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+    
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+    >>> add_integer(7, [1, 2, 3])
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+# check for ValueError
+=========================================================
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(float('nan'), 7)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(7, float('nan'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+# check for OverflowError
+========================================================
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('inf'), 100)
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('inf'), float('nan'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
