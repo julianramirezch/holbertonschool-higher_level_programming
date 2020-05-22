@@ -46,7 +46,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-7, -7, -7, -7]), -7)
 
     def test_raises(self):
-        self.assertRaises(TypeError, max_integer, [1, 'Holberton', True])
+        self.assertRaises(TypeError, max_integer, [1, 'Holberton', 3])
 
 
 if __name__ == '__main__':
