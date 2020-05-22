@@ -9,11 +9,36 @@
     <BLANKLINE>
     Colombia 1.
     <BLANKLINE>
-    4 .?
+    4 .
     <BLANKLINE>
-    .A:San ?
+    ?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    A:
+    <BLANKLINE>
+    San ?
     <BLANKLINE>
     ///\ Francisco
+
+    >>> text_indentation("Co:   l ..    o? mb....ia")
+    Co:
+    <BLANKLINE>
+    l .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    o?
+    <BLANKLINE>
+    mb.
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    ia
 
 # check for TypeError
 =========================================================
