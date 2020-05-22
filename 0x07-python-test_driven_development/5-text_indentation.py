@@ -12,8 +12,9 @@ def text_indentation(text):
     new_text = new_text.replace(':', ':\n\n')
 
     text_list = new_text.split('\n')
-    for string in text_list:
-        if string != text_list[len(text_list) - 1]:
-            print(string.strip())
+    size = len(text_list)
+    for index in range(size):
+        if index < (size - 1):
+            print('{}'.format(text_list[index].strip()))
         else:
-            print(string.strip(), end='')
+            print('{}'.format(text_list[index].strip()), end='')
