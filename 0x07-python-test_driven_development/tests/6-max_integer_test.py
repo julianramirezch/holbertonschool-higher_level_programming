@@ -39,5 +39,10 @@ class TestMaxInteger(unittest.TestCase):
     def test_same_integer(self):
         """Test same list numbers
         """
+
         self.assertEqual(max_integer([7, 7, 7, 7]), 7)
         self.assertEqual(max_integer([-7, -7, -7, -7]), -7)
+
+
+if __name__ == '__main__':
+    unittest.main()
