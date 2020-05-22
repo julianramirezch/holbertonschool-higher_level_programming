@@ -17,6 +17,9 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-1, -3, -4, 0]), 0)
         self.assertEqual(max_integer([-1, 0, -4, 0]), 0)
 
+    def test_max_string(self):
+        self.assertEqual(max_integer(["h", "o", "L"]), "o")
+
     def test_types(self):
         """Test Types in list
         """
@@ -39,9 +42,11 @@ class TestMaxInteger(unittest.TestCase):
     def test_same_integer(self):
         """Test same list numbers
         """
-
         self.assertEqual(max_integer([7, 7, 7, 7]), 7)
         self.assertEqual(max_integer([-7, -7, -7, -7]), -7)
+
+    def test_raises(self):
+        self.assertRaises(TypeError, max_integer, [1, 'Holberton', True])
 
 
 if __name__ == '__main__':
