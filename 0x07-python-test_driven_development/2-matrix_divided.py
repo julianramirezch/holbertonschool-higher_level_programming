@@ -8,6 +8,7 @@ def matrix_divided(matrix, div):
     row_error = 'Each row of the matrix must have the same size'
     div_error = 'div must be a number'
     div_list = []
+    size = len(matrix[0])
 
     if type(matrix) is not list:
         raise TypeError(matrix_error)
@@ -20,10 +21,14 @@ def matrix_divided(matrix, div):
         if type(items) is not list:
             raise TypeError(matrix_error)
         row = []
+        row_size = 0
         for num in items:
             if type(num) is not int and float:
                 raise TypeError(matrix_error)
             row.append(round((num / div), 2))
+        row_size = len(row)
+        if size != row_size:
+            raise TypeError(row_error)
         div_list.append(row)
 
     return div_list
