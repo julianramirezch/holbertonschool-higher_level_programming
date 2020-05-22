@@ -1,0 +1,28 @@
+# importing module: 5-text_indentation
+=========================================================
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# check correct outputs
+=========================================================
+    >>> text_indentation("Holberton School: Colombia 1. 4 .? .A:San ? ///\\ Francisco")
+    Holberton School:
+    <BLANKLINE>
+    Colombia 1.
+    <BLANKLINE>
+    4 .?
+    <BLANKLINE>
+    .A:San ?
+    <BLANKLINE>
+    ///\ Francisco
+
+# check for TypeError
+=========================================================
+    >>> text_indentation(123456789.)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation("Holberton","Bogota D.C")
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
