@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 """ Module: 4-print_square -  prints a square with the character #."""
 
 
