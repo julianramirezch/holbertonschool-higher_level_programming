@@ -50,14 +50,16 @@ class Rectangle:
 
     def __str__(self):
         rec = ''
+        symbol = str(self.print_symbol)
+
         if self.__width == 0 or self.__height == 0:
             return rec
 
         for i in range(self.__height):
             if i < self.__height - 1:
-                rec += ('#' * self.__width) + '\n'
+                rec += (symbol * self.__width) + '\n'
             else:
-                rec += ('#' * self.__width)
+                rec += (symbol * self.__width)
 
         return rec
 
