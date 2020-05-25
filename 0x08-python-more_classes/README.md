@@ -42,12 +42,16 @@
 
 | Name | Description                    |
 | ------------- | ------------------------------ |
-| `0-add_integer.py, tests/0-add_integer.txt `      | function that adds 2 integers and test function       |
-| `2-matrix_divided.py, tests/2-matrix_divided.txt`   | function that divides all elements of a matrix and test function   |
-| `3-say_my_name.py, tests/3-say_my_name.txt`      | function that prints My name is <first name> <last name> and test function      |
-| `4-print_square.py, tests/4-print_square.txt`      | unction that prints a square with the character # and test function       |
-| `5-text_indentation.py, tests/5-text_indentation.txt`      | function that prints a text with 2 new lines after each of these characters: ., ? and test function       |
-| `tests/6-max_integer_test.py`      | unittests for the function def max_integer(list=[]):       |
+| `0-rectangle.py`      | empty class Rectangle that defines a rectangle       |
+| `1-rectangle.py`   | Real definition of a rectangle    |
+| `2-rectangle.py`      | Area and Perimeter      |
+| `3-rectangle.py`      | String representation       |
+| `4-rectangle.py`      |Eval is magic       |
+| `5-rectangle.py`      | Detect instance deletion       |
+| `6-rectangle.py`      | How many instances        |
+| `7-rectangle.py`      | Change representation       |
+| `8-rectangle.py`      | Compare rectangles        |
+| `9-rectangle.py`      | A square is a rectangle        |
 
 ## Author: 
 ### Julian Ramirez <julianramirezch1@gmail.com>
