@@ -50,16 +50,16 @@ class Rectangle:
 
     def __str__(self):
         rec = ''
-        symbol = str(self.print_symbol)
-        if self.__width or self.__height is not 0:
-            for i in range(self.__height):
-                if i < self.__height - 1:
-                    rec += (symbol * self.__width) + '\n'
-                else:
-                    rec += (symbol * self.__width)
+        if self.__width == 0 or self.__height == 0:
             return rec
-        else:
-            return rec
+
+        for i in range(self.__height):
+            if i < self.__height - 1:
+                rec += ('#' * self.__width) + '\n'
+            else:
+                rec += ('#' * self.__width)
+
+        return rec
 
     def __repr__(self):
         return 'Rectangle({:d}, {:d})'.format(self.__width, self.__height)
