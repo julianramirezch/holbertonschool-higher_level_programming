@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module: 5-rectangle.py - defines a rectangle:(based on 4-rectangle.py)"""
+""" Module: 6-rectangle.py - defines a rectangle:(based on 5-rectangle.py)"""
 
 
 class Rectangle:
