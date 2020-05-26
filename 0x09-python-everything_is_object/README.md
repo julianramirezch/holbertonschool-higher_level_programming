@@ -30,8 +30,8 @@
 
 0. Who I am?
 
- What function would you use to print the type of an object? Write the
- name of the function in the file, without the ()
+    What function would you use to print the type of an object? Write the
+    name of the function in the file, without the ()
 
 1. Where are you?
 
@@ -44,7 +44,7 @@
  In the following code, do a and b point to the same object?
  Answer with Yes or No.
 
->>> a = 89
+'>>> a = 89'
 >>> b = 100
 
 3. Right count =
