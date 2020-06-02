@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Module: 7-rectangle - superClass BaseGeometry"""
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
