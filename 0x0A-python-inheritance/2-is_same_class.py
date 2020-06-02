@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Module: 2-is_same_class - True if object is exactly an instance of the class"""
+""" Module: 2-is_same_class - True if object is exactly an instance of the
+class"""
 
 
 def is_same_class(obj, a_class):
