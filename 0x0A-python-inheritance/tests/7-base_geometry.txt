@@ -1,4 +1,4 @@
-# importing module: 4-print_square
+# importing module: 7-base_geometry
 =========================================================
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
     >>> bg = BaseGeometry()
