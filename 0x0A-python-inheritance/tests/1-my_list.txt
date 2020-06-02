@@ -1,0 +1,21 @@
+# importing module: 1-my_list
+=========================================================
+    >>> MyList = __import__('1-my_list').MyList
+    >>> my_list = MyList([1, 4, 2, 3, 5])
+
+# check correct outputs
+=========================================================
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> my_list = MyList([-1, -6, 7, 100, 0])
+    >>> my_list.print_sorted()
+    [-6, -1, 0, 7, 100]
+    >>> my_list = MyList([])
+    >>> my_list.print_sorted()
+    []
+    >>> my_list = MyList([7])
+    >>> my_list.print_sorted()
+    [7]
+    >>> my_list = MyList([7, 7, 7])
+    >>> my_list.print_sorted()
+    [7, 7, 7]
