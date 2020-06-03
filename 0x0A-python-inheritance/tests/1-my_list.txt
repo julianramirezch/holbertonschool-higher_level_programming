@@ -12,15 +12,6 @@
 =========================================================
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
-    >>> my_list = MyList()
-    >>> my_list.print_sorted()
+    >>> list2 = MyList()
+    >>> list2.print_sorted()
     []
-    >>> my_list = MyList([7])
-    >>> my_list.print_sorted()
-    [7]
-    >>> my_list = MyList([7, 7, 7])
-    >>> my_list.print_sorted()
-    [7, 7, 7]
-    >>> isinstance(my_list, MyList)
-    True
-
