@@ -36,12 +36,7 @@
 | `4-inherits_from.py`      |function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.       |
 | `5-base_geometry.py`      |  empty class BaseGeometry       |
 | `6-base_geometry.py`      | Public instance method: def area(self): that raises an Exception with the message area() is not implemented        |
-| `7-base_geometry.py, tests/7-base_geometry.txt`      | class BaseGeometry (based on 6-base_geometry.py). Public instance method: def integer_validator(self, name, value): that validates value:
-
-    you can assume name is always a string
-    if value is not an integer: raise a TypeError exception, with the message <name> must be an integer
-    if value is less or equal to 0: raise a ValueError exception with the message <name> must be greater than 0
-    |
+| `7-base_geometry.py, tests/7-base_geometry.txt`      | class BaseGeometry (based on 6-base_geometry.py). Public instance method: def integer_validator(self, name, value): that validates value|
 | `8-rectangle.py`      | Instantiation with width and height: def __init__(self, width, height):        |
 | `9-rectangle.py`      | class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py)      |
 
