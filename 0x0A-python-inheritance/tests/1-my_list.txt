@@ -21,3 +21,12 @@
     [7, 7, 7]
     >>> isinstance(my_list, MyList)
     True
+    >>> my_list = MyList([[1, 4], [2, 3, 5]])
+    >>> my_list.print_sorted()
+    [[1, 4], [2, 3, 5]]
+    >>> my_list.print_sorted()
+    [[1, 4], [2, 3, 5]]
+    >>> my_list = MyList([(1, 4), (2, 3)])
+    >>> my_list.print_sorted()
+    [(1, 4), (2, 3)]
+
