@@ -1,6 +1,7 @@
 # importing module: 1-my_list
 =========================================================
     >>> MyList = __import__('1-my_list').MyList
+    >>> my_list = MyList()
     >>> my_list = MyList([1, 4, 2, 3, 5])
 
 # check correct outputs
