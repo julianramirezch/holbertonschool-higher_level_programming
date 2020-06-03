@@ -18,3 +18,6 @@
     >>> list2 = MyList()
     >>> list2.print_sorted()
     []
+    >>> list2.append(-7)
+    >>> list2.print_sorted()
+    [-7]
