@@ -5,5 +5,5 @@
 class MyList(list):
     """Class define MyList"""
     def print_sorted(self):
-        """ Printed sorted list"""
+        """prints the list, but sorted (ascending sort)"""
         print(sorted(self))
