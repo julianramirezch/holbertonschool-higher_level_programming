@@ -32,7 +32,7 @@
 | `12-student.py`      | class Student that defines a student by: (based on 11-student.py)|
 | `13-student.py`      |class Student that defines a student by: (based on 12-student.py) *Note|
 | `14-pascal_triangle.py`      | function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n |
-# Note : Now, you have a simple implementation of a serialization and deserialization mechanism (concept of representation of an object to another format, without losing any information and allow us to rebuild an object based on this representation)
+#### Note : Now, you have a simple implementation of a serialization and deserialization mechanism (concept of representation of an object to another format, without losing any information and allow us to rebuild an object based on this representation)
 
 ## Author: 
 ### Julian Ramirez <julianramirezch1@gmail.com>
