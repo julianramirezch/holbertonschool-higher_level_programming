@@ -59,6 +59,6 @@ class Base:
         with open(filename, 'r', encoding='utf-8') as f:
             content = f.read()
             new_list = cls.from_json_string(content)
-            for i in range(len(new_list)):
-                ins_list.append(cls.create(**new_list[i]))
+            for i in new_list:
+                ins_list.append(cls.create(**i))
         return ins_list
