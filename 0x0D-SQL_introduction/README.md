@@ -2,7 +2,7 @@
 <H1 align="center"> 0x0D. SQL - Introduction </H1>
 
 <p align="center">
-   <a href="https://www.holbertonschool.com/co"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMySQL&psig=AOvVaw3N0OlDaEduFhl-iEO7Iq_O&ust=1594830149560000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOj7kLeTzeoCFQAAAAAdAAAAABAD" width="170" height="170"/></a>
+   <a href="https://www.mysql.com/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1920px-MySQL.svg.png" width="170" height="170"/></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
@@ -37,6 +37,17 @@
 | `7-insert_value.sql`      |  script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.      |
 | `8-count_89.sql`      | script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.        |
 | `9-full_creation.sql`      | script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.       |
+| `10-top_score.sql`      |  script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.|
+| `11-best_score.sql`      | script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.        |
+| `12-no_cheating.sql`      | script that updates the score of Bob to 10 in the table second_table.       |
+| `13-change_class.sql`      |  script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.|
+| `14-average.sql`      | script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.       |
+| `15-groups.sql`      | sscript that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.       |
+| `16-no_link.sql`      |  script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.|
+| `100-move_to_utf8.sql`      | script that converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server.      |
+| `101-avg_temperatures.sql`      | script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending). |
+| `102-top_city.sql`      | script that displays the top 3 of cities temperature during July and August ordered by temperature (descending) |
+| `103-max_state.sql`      | script that displays the max temperature of each state (ordered by State name).|
 
 ## Author: 
 ### Julian Ramirez <julianramirezch1@gmail.com>
