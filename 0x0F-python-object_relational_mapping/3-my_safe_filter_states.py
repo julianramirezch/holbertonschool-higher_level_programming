@@ -33,5 +33,7 @@ def connect_database(host, port, user, passwd, db):
 
 if __name__ == "__main__":
     db = connect_database('localhost', 3306, argv[1], argv[2], argv[3])
-    state = get_data(db, argv[4])
-    print(state)
+    states = get_data(db, argv[4])
+    for state in states:
+        if state[1] == argv[4]:
+            print(state)
