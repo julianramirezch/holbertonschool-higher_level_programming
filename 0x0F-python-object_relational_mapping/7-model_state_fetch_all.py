@@ -15,10 +15,9 @@ def get_data(engine):
     session = Session()
 
     states_data = session.query(State).order_by(State.id).all()
-    for state in states_data:
-        print('{}: {}'.format(state.id, state.name))
-
     session.close()
+
+    return (states_data)
 
 
 def connect_database(user, passwd, db):
@@ -30,4 +29,6 @@ def connect_database(user, passwd, db):
 
 if __name__ == "__main__":
     engine = connect_database(argv[1], argv[2], argv[3])
-    get_data(engine)
+    data = get_data(engine)
+    for state in data:
+        print('{}: {}'.format(state.id, state.name))
