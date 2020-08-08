@@ -2,6 +2,7 @@
 import MySQLdb
 from sys import argv
 
+
 def get_states(db):
     try:
         cur = db.cursor()
