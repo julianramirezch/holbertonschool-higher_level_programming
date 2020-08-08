@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-import MySQLdb
-from sys import argv
-
 
 def get_states(db):
     try:
@@ -23,6 +20,8 @@ def connect_database(host, port, user, passwd, db):
 
 
 if __name__ == "__main__":
+    import MySQLdb
+    from sys import argv
     db = connect_database('localhost', 3306, argv[1], argv[2], argv[3])
     states = get_states(db)
     for state in states:
