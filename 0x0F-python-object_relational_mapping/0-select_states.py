@@ -15,7 +15,8 @@ def get_states(db):
     finally:
         cur.close()
         db.close()
-        return(states)
+    for state in states:
+        print(state)
 
 
 def connect_database(host, port, user, passwd, db):
@@ -23,8 +24,7 @@ def connect_database(host, port, user, passwd, db):
     db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     return(db)
 
+
 if __name__ == "__main__":
     db = connect_database('localhost', 3306, argv[1], argv[2], argv[3])
     states = get_states(db)
-    for state in states:
-        print(state)
