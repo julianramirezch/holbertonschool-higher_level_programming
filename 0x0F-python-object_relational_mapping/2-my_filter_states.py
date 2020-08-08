@@ -9,7 +9,8 @@ def get_data(db, name):
     ''' Get data from hbtn_0e_0_usa database '''
     try:
         cur = db.cursor()
-        cur.execute("SELECT * FROM states WHERE name='{}'".format(name))
+        cur.execute("SELECT * FROM states WHERE name='{}'\
+                     ORDER BY id ASC".format(name))
         state = cur.fetchall()
     except MySQLdb.Error as e:
         print('MySQL Error {}: {}'.format(e.args[0], e.args[1]))
