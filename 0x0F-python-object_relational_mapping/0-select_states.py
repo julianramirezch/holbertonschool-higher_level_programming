@@ -19,7 +19,7 @@ def get_states(db):
 
 
 def connect_database(host, port, user, passwd, db):
-    ''' Function conect database '''
+    ''' Function connect database '''
     db = MySQLdb.connect(host=host,
                          port=port,
                          user=user,
