@@ -33,4 +33,3 @@ if __name__ == "__main__":
     states = get_data(db)
     for state in states:
         print(state)
-
