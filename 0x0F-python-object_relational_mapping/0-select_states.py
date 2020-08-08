@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+
 import MySQLdb
 from sys import argv
 
 
 def get_states(db):
+    ''' Get states from hbtn_0e_0_usa database '''
     try:
         cur = db.cursor()
-        cur.execute("""SELECT * FROM states ORDER BY id ASC""")
+        cur.execute('SELECT * FROM states ORDER BY id ASC')
         states = cur.fetchall()
     except MySQLdb.Error as e:
         print('MySQL Error {}: {}'.format(e.args[0], e.args[1]))
@@ -17,6 +19,7 @@ def get_states(db):
 
 
 def connect_database(host, port, user, passwd, db):
+    ''' Function connect database '''
     db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     return(db)
 
