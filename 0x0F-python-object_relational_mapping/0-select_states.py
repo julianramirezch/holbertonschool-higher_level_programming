@@ -1,21 +1,28 @@
 #!/usr/bin/python3
 
-def connectToDB():
-    conn = MySQLdb.connect(host='localhost', port=3306,
-                           user=sys.argv[1], passwd=sys.argv[2],
-                           db=sys.argv[3], charset='utf8')
-    cur = conn.cursor()
+import MySQLdb
+from sys import argv
 
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
+
+def get_states(db):
+    ''' Get states from hbtn_0e_0_usa database '''
+    cur = db.cursor()
+    cur.execute('SELECT * FROM states ORDER BY id ASC')
+    states = cur.fetchall()
 
     cur.close()
-    conn.close()
+    db.close()
+    return states
 
 
-if __name__ == '__main__':
-    import MySQLdb
-    import sys
-    connectToDB()
+def connect_database(host, port, user, passwd, db):
+    ''' Function connect database '''
+    db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    return db
+
+
+if __name__ == "__main__":
+    db = connect_database('localhost', 3306, argv[1], argv[2], argv[3])
+    states = get_states(db)
+    for state in states:
+        print(state)
