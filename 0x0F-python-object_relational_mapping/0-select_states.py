@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def connectToDB():
     conn = MySQLdb.connect(host='localhost', port=3306,
                            user=sys.argv[1], passwd=sys.argv[2],
@@ -11,6 +13,7 @@ def connectToDB():
 
     cur.close()
     conn.close()
+
 
 if __name__ == '__main__':
     import MySQLdb
