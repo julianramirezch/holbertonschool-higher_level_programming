@@ -4,9 +4,8 @@ import MySQLdb
 from sys import argv
 
 
-def get_states(db):
+def get_states():
     ''' Get states from hbtn_0e_0_usa database '''
-    db = connect_database('localhost', 3306, argv[1], argv[2], argv[3])
     db = MySQLdb.connect(host='localhost',
                          port=3306,
                          user=argv[1],
@@ -26,4 +25,4 @@ def get_states(db):
 
 
 if __name__ == "__main__":
-    states = get_states(db)
+    states = get_states()
