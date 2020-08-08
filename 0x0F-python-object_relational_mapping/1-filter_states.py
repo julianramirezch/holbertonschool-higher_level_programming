@@ -9,9 +9,8 @@ def get_data(db):
     ''' Get data from hbtn_0e_0_usa database '''
     try:
         cur = db.cursor()
-        cur.execute("""SELECT * FROM states
-                       WHERE name LIKE 'N%'
-                       ORDER BY id ASC""")
+        cur.execute("SELECT * FROM states WHERE name LIKE 'N%'\
+                     ORDER BY id ASC")
         states = cur.fetchall()
     except MySQLdb.Error as e:
         print('MySQL Error {}: {}'.format(e.args[0], e.args[1]))
