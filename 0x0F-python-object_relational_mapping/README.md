@@ -1,7 +1,7 @@
 <H1 align="center"> 0x0F. Python - Object-relational mapping </H1>
 
 <p align="center">
-   <a href="https://www.python.org/"><img src="https://www.python.org/static/img/python-logo.png" width="220" height="170"/></a>
+   <a href="https://www.python.org/"><img src="https://www.python.org/static/img/python-logo.png" /></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
