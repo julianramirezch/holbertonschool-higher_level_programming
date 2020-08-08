@@ -34,4 +34,5 @@ if __name__ == "__main__":
     db = connect_database('localhost', 3306, argv[1], argv[2], argv[3])
     states = get_data(db)
     for state in states:
-        print(state)
+        if state[1][0] == 'N':
+            print(state)
