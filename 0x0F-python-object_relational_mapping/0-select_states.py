@@ -6,13 +6,9 @@ from sys import argv
 
 def get_states(db):
     ''' Get states from hbtn_0e_0_usa database '''
-    try:
         cur = db.cursor()
         cur.execute("""SELECT * FROM states ORDER BY id ASC""")
         states = cur.fetchall()
-    except MySQLdb.Error as e:
-        print('MySQL Error {}: {}'.format(e.args[0], e.args[1]))
-    finally:
         cur.close()
         db.close()
         return(states)
