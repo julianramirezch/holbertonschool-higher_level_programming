@@ -4,7 +4,7 @@ import MySQLdb
 from sys import argv
 
 
-def get_states():
+if __name__ == "__main__":
     ''' Get states from hbtn_0e_0_usa database '''
     db = MySQLdb.connect(host='localhost',
                          port=3306,
@@ -22,7 +22,3 @@ def get_states():
         db.close()
     for state in states:
         print(state)
-
-
-if __name__ == "__main__":
-    states = get_states()
