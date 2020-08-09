@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" Write a script that lists all State objects that contain the letter a from the database  database hbtn_0e_6_usa
-    using SQLAlchemy """
+""" Write a script that lists all State objects that contain the letter a from
+the database  database hbtn_0e_6_usa using SQLAlchemy """
 
 from sys import argv
 from model_state import Base, State
