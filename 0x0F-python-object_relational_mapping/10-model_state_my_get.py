@@ -31,7 +31,8 @@ def connect_database(user, passwd, db):
 if __name__ == "__main__":
     engine = connect_database(argv[1], argv[2], argv[3])
     data = get_data(engine, argv[4])
-    for state in data:
-        print(state.id)
+    if data:
+        for state in data:
+            print(state.id)
     else:
         print('Not found')
