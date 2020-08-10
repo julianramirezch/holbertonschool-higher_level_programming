@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script that lists all State objects from the database hbtn_0e_6_usa
+""" script that prints all City objects from the database hbtn_0e_14_usa
     using SQLAlchemy """
 
 from sys import argv
@@ -33,4 +33,4 @@ if __name__ == "__main__":
     engine = connect_database(argv[1], argv[2], argv[3])
     data = get_data(engine)
     for city in data:
-        print('{}: ({}) {}'.format(city[1].name, city[1].id, city[0].name))
+        print('{}: ({}) {}'.format(city[1].name, city[0].id, city[0].name))
