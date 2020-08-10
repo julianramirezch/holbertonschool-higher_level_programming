@@ -17,9 +17,10 @@ def get_data(engine):
     session = Session()
 
     row_state = State(name='California')
-    row_city = City(name='San Francisco')
-    row_state.cities = [row_city]
     session.add(row_state)
+    session.commit()
+    row_city = City(name='San Francisco')
+    session.add(row_city)
     session.commit()
     session.close()
 
