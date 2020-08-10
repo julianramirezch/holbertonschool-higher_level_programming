@@ -14,8 +14,9 @@ def get_data(engine):
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states_data = session.query(State).filter(State.name.like('%a%'))
-    delete = [session.delete(state) for state in states_data]
+    states_data = session.query(State).filter(State.id == 2).\
+        update({State.name: 'New Mexico'}, synchronize_session='evaluate')
+
     session.commit()
     session.close()
 
