@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """  finds a peak in a list of unsorted integers """
 
-
+# RETURN PEAK 3
 # def find_peak(list_of_integers):
 #     """ function that finds a peak in a list of unsorted integers """
 #     lenght = len(list_of_integers)
@@ -23,6 +23,7 @@
 #     else:
 #         return find_peak_2(list_n, middle, high, lenght)
 
+# RETURN PEAK 4
 def find_peak(list_of_integers):
     """ function that finds a peak in a list of unsorted integers """
     if len(list_of_integers) != 0:
