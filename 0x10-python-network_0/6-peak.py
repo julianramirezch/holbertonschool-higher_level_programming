@@ -18,6 +18,6 @@ def find_peak_2(list_n, low, high, lenght):
             (middle == lenght - 1 or list_n[middle + 1] <= list_n[middle]):
         return middle
     elif middle > 0 and list_n[middle - 1] > list_n[middle]:
-        return find_peak_2(list_n, low, (middle - 1), lenght)
+        return find_peak_2(list_n, low, middle, lenght)
     else:
-        return find_peak_2(list_n, (middle + 1), high, lenght)
+        return find_peak_2(list_n, middle, high, lenght)
