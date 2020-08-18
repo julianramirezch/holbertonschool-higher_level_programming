@@ -15,8 +15,8 @@ def find_peak_2(list_n, low, high, lenght):
     middle = int(low + (high - low)/2)
     # print('middle {} lenght {}'.format(middle, lenght))
 
-    if (list_n[middle - 1] <= list_n[middle]) and\
-            (list_n[middle + 1] <= list_n[middle]):
+    if (middle == 0 or list_n[middle - 1] <= list_n[middle]) and\
+            (middle == lenght - 1 or list_n[middle + 1] <= list_n[middle]):
         return middle
     if middle > 0 and list_n[middle - 1] > list_n[middle]:
         return find_peak_2(list_n, low, middle, lenght)
