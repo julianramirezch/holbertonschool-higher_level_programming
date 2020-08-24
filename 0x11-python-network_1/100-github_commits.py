@@ -7,7 +7,7 @@ from sys import argv
 
 def get_commits(repo, owner):
     ''' Function get commits '''
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(repo, owner)
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(owner, repo)
     r = requests.get(url)
     commits = 10
 
