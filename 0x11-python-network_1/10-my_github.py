@@ -10,7 +10,7 @@ from sys import argv
 def auth_github(user, passwd):
     ''' Function auth in github api '''
     url = 'https://api.github.com/user'
-    r = requests.post(url, auth=HTTPBasicAuth(user, passwd))
+    r = requests.get(url, auth=HTTPBasicAuth(user, passwd))
     print(r.json().get('id'))
 
 
