@@ -8,12 +8,12 @@ from sys import argv
 
 def fetch_url(url):
     ''' Function fetch url '''
-    with urllib.request.urlopen(url) as response:
-        html = response.read()
-
-    return html
+    try:
+        with urllib.request.urlopen(url) as response:
+            print(response.read().decode('utf-8'))
+    except urllib.error.HTTPError as error:
+            print('Error code: {}'.format(error.code))
 
 
 if __name__ == "__main__":
-    html = fetch_url(argv[1])
-    print(html)
+    fetch_url(argv[1])
