@@ -37,7 +37,7 @@ if __name__ == "__main__":
     search_params = {
         'q': argv[3],
         'result_type': 'mixed',
-        'count': 5
+        'count': 15
     }
 
     search_url = 'https://api.twitter.com/1.1/search/tweets.json'
@@ -47,6 +47,10 @@ if __name__ == "__main__":
 
     tweet_data = search_resp.json()
     statuses = tweet_data.get('statuses')
+    count = 5
     for tuit in statuses:
         print('[{}] {} by {}'.format(tuit.get('id'), tuit.get('text'),
               tuit.get('user').get('name')))
+        count -= 1
+        if count == 0:
+            break
