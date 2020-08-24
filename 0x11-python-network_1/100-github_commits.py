@@ -7,19 +7,16 @@ from sys import argv
 
 def get_commits(repo, owner):
     ''' Function get commits '''
-    try:
-        url = 'https://api.github.com/repos/{}/{}/commits'.format(repo, owner)
-        r = requests.get(url)
-        commits = 10
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(repo, owner)
+    r = requests.get(url)
+    commits = 10
 
-        for i in r.json():
-            print('{}: {}'.format(i.get('sha'),
-                  i.get('commit').get('author').get('name')))
-            commits -= 1
-            if commits == 0:
-                break
-    except:
-        pass
+    for i in r.json():
+        print('{}: {}'.format(i.get('sha'),
+              i.get('commit').get('author').get('name')))
+        commits -= 1
+        if commits == 0:
+            break
 
 
 if __name__ == "__main__":
