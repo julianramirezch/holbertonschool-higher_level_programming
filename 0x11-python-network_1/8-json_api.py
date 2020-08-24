@@ -8,13 +8,20 @@ from sys import argv
 
 def request_url(url, letter):
     ''' Function request url '''
-    request = requests.get(url, data={'q': letter})
+    data = {'q': letter}
+    request = requests.post(url, data=data)
 
-    return request.content
+    try:
+        if len(request.json()) == 0:
+            print('No result')
+        else:
+            print('[{}] {}'.format(request.json().get('id'),
+                                   request.json().get('name')))
+    except Exception:
+        print('Not a valid JSON')
 
 if __name__ == "__main__":
     q = ''
-    if argv[1]:
+    if len(argv) == 2:
         q = argv[1]
     response = request_url('http://0.0.0.0:5000/search_user', q)
-    print(response)
