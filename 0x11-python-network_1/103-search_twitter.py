@@ -14,8 +14,7 @@ if __name__ == "__main__":
     b64_key = base64.b64encode(key)
     b64_key = b64_key.decode('ascii')
 
-    url = 'https://api.twitter.com/'
-    auth_url = '{}oauth2/token'.format(url)
+    auth_url = 'https://api.twitter.com/oauth2/token'
 
     headers = {
         'Authorization': 'Basic {}'.format(b64_key),
