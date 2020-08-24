@@ -16,4 +16,4 @@ def fetch_url(url):
 
 if __name__ == "__main__":
     html = fetch_url(argv[1])
-    print(html['X-Request-Id'])
+    print(html.get('X-Request-Id'))
