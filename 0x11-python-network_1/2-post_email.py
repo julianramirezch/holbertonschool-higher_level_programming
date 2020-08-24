@@ -10,13 +10,13 @@ from sys import argv
 
 def fetch_url(url, email):
     ''' Fetch url '''
-    values['email'] = email
+    values = {'email': email}
     data = urllib.parse.urlencode(values)
     data = data.encode('utf-8')
     req = urllib.request.Request(url, data)
 
     with urllib.request.urlopen(req) as response:
-        html = response.read()
+        html = response.read().decode('utf8')
 
     return html
 
