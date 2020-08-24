@@ -27,7 +27,6 @@ if __name__ == "__main__":
     }
 
     r = requests.post(auth_url, headers=headers, data=data)
-    print(r.status_code)
     access_token = r.json().get('access_token')
 
     search_headers = {
@@ -43,7 +42,6 @@ if __name__ == "__main__":
     search_url = 'https://api.twitter.com/1.1/search/tweets.json'
     search_resp = requests.get(search_url, headers=search_headers,
                                params=search_params)
-    print(search_resp.status_code)
 
     tweet_data = search_resp.json()
     statuses = tweet_data.get('statuses')
