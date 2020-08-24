@@ -12,8 +12,8 @@ def get_commits(repo, owner):
     commits = 10
 
     for i in r.json():
-        print('{}: {}'.format(i.get('sha'), i.get('commit').get('author')
-              .get('name')))
+        print('{}: {}'.format(i.get('sha'),
+              i.get('commit').get('author').get('name')))
         commits -= 1
         if commits == 0:
             break
