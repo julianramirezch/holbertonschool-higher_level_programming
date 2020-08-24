@@ -8,12 +8,11 @@ from sys import argv
 
 def request_url(url):
     ''' Request url '''
-    try:
-        request = requests.get(url)
-        print(request.content)
-    except Exception as error:
+    request = requests.get(url)
+    if request.status_code == 200:
+        print(request.content.decode('utf-8'))
+    else:
         print('Error code: {}'.format(request.status_code))
-
 
 if __name__ == "__main__":
     request_url(argv[1])
