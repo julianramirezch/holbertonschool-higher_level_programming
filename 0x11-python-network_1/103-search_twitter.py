@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     search_params = {
         'q': argv[3],
-        'result_type': 'mixed',
+        'result_type': 'recent',
         'count': 15
     }
 
