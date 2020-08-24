@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     search_params = {
         'q': argv[3],
-        'result_type': 'recent',
+        'result_type': 'mixed',
         'count': 5
     }
 
@@ -46,6 +46,7 @@ if __name__ == "__main__":
     print(search_resp.status_code)
 
     tweet_data = search_resp.json()
-    for tuit in tweet_data.get('statuses'):
+    statuses = tweet_data.get('statuses')
+    for tuit in statuses:
         print('[{}] {} by {}'.format(tuit.get('id'), tuit.get('text'),
-              tuit.get('name')))
+              tuit.get('user').get('name')))
