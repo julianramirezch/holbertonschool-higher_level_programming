@@ -12,9 +12,9 @@ def request_url(url, email):
     data = {'email': email}
     request = requests.post(url, data)
 
-    return(request)
+    return(request.content)
 
 
 if __name__ == "__main__":
     response = request_url(argv[1], argv[2])
-    print(response)
+    print(response.decode('utf-8'))
