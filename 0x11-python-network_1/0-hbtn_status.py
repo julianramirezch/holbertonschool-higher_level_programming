@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 ''' Python script that fetches https://intranet.hbtn.io/status '''
-import urllib.request as ur
+import urllib.request
 
 
 def fetch_url(url):
     ''' Function fetch url '''
-    with ur.urlopen(url) as response:
+    with urllib.request.urlopen(url) as response:
         html = response.read()
 
     return html
