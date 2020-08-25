@@ -1,7 +1,7 @@
 <H1 align="center"> 0x11. Python - Network #1</H1>
 
 <p align="center">
-   <a href="https://www.linux.org/"><img src="https://requests.readthedocs.io/es/latest/#" width="170" height="170"/></a>
+   <a href="https://www.linux.org/"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.python-requests.org%2F&psig=AOvVaw3xsJBmuEHeVbuuPptuHheM&ust=1598402088165000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOC9iKqOtesCFQAAAAAdAAAAABAD" width="170" height="170"/></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
@@ -34,6 +34,8 @@
 | `7-error_code.py`      | Python script that takes in a URL, sends a request to the URL and displays the body of the response.s  |
 | `8-json_api.py`      | Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.  |
 | `10-my_github.py`      | Python script that takes your Github credentials (username and password) and uses the Github API to display your id  |
+| `1100-github_commits.py`      | Python script that request to the Github API  |
+| `103-search_twitter.py`      | Python script that search request to the Twitter API |
 
 
 ## Author: 
