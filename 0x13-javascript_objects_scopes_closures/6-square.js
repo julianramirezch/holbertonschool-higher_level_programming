@@ -4,12 +4,11 @@ const oldSquare = require('./5-square');
 
 class Square extends oldSquare {
   charPrint (c) {
+    if (c === undefined) {
+      c = 'X';
+    }
     for (let i = 0; i < this.height; i++) {
-      if (c === undefined) {
-        console.log('X'.repeat(this.width));
-      } else {
-        console.log('C'.repeat(this.width));
-      }
+      console.log(c.repeat(this.width));
     }
   }
 }
